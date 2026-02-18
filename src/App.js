@@ -1,23 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/layout/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import LoginPage from "./pages/Login/Loginpage.js";
-import DashboardPage from "./pages/Dashboard/Dashboardpage.js";
-import PredictionPage from "./pages/Prediction/PredictionPage.js";
-import ResultPage from "./pages/Result/ResultPage.js";
+import Navbar from "./components/layout/Navbar";
+import Dashboardpage from "./pages/Dashboard/Dashboardpage";
+import PredictionPage from "./pages/Prediction/PredictionPage";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
-        <Route path="/predict" element={<PredictionPage />} />
-        <Route path="/result" element={<ResultPage />} />
+        <Route path="/" element={<Dashboardpage />} />
+        <Route path="/prediction" element={<PredictionPage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
