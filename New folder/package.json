@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "axios": "^1.13.5"
-=======
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -40,6 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
->>>>>>> f2e52b85d49e318dcd69e67c238f6b856df90e41
   }
 }
